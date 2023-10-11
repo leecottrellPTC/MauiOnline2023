@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Payroll.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Label
+                    Text="Hours Worked"
+                    FontSize="Medium"
+                    WidthRequest="200"/>
+                <Entry
+                    x:Name="HoursEntry"
+                    FontSize="Medium"
+                    Keyboard="Numeric"
+                    WidthRequest="100"
+                    BackgroundColor="Black"
+                    TextColor="Bisque"
+                    HorizontalTextAlignment="End"
+                    />
+            </HorizontalStackLayout>
+            <Button
+                x:Name="CalcButton"
+                Text="Calculate Payroll"
+                FontSize="Large"
+                Clicked="CalcButton_Clicked"/>
+            <!--Binding-->
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Label
+                    Text="Hours Worked"
+                    FontSize="Medium"
+                    WidthRequest="200"/>
+               
+                    <Label
+                        x:Name="PayLabel"
+                        FontSize="Medium"              
+                        WidthRequest="100"/>
+                
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
